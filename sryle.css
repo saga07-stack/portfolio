@@ -1,0 +1,235 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 100px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+}
+*{
+margin: 0;
+padding: 0;
+}
+@media screen and (min-width: 300px) and (max-width:600){
+.nav-bar a{
+font-size: large;
+
+}
+
+.text> .intro, h2 h1{
+font-size: larger;
+
+
+ }
+ .aboutme> .about h1{
+font-size: large;
+padding: 1px;
+margin: 5px;
+
+ }
+ .aboutme> .about p{
+font-size: smaller;
+ color: red;
+}
+.address-container div{
+
+font-size: 10px;
+
+}
+}
+
+@media screen and (max-width: 800px) {
+
+.text> .intro, h2 h1{
+font-size: largerr;
+
+
+ }
+ .aboutme> .about h1{
+
+font-size:larger;
+padding: 1px;
+margin: 5px;
+
+ }
+ 
+.address-container div{
+
+font-size: 15px;
+
+}
+}
+@media screen and (max-width: 1200px) {
+
+.text> .intro, h2 h1{
+font-size: largerr;
+
+
+ }
+ .aboutme> .about h1{
+font-size: 50px;
+
+padding: 0px;
+
+ }
+ 
+.address-container div{
+display: grid;
+justify-content: space-evenly;
+font-size: 15px;
+
+}
+}
+
+                                                  
+
+#header> .nav-bar{
+position: absolute;
+display: flex;
+right: 0;
+top: 0;
+gap: 80px;
+padding: 30px;
+}
+.nav-ba,  a{
+text-decoration: none;
+color: white;
+font-size: 30px;
+
+
+}
+.nav-ba, a:hover{
+  color: greenyellow;
+  text-decoration: underline;
+}
+.intro{
+font-size: 60px;
+margin: 10%;
+
+}
+.intro h2{
+padding: 10px;
+font-weight: 100;
+margin: 10px;
+}
+.intro h1{
+padding: 10px;
+margin: 10px;
+}
+.intro p{
+font-weight: 100;
+color: silver;
+padding: 10px;
+margin: 10px;
+}
+
+
+
+.aboutme{
+background-color: silver;
+height: 300px;
+width:calc(70%);
+margin: auto;
+}
+.aboutme> .about {
+text-align: center;
+
+}
+.about h1{
+font-size: 50px;
+margin: 10px;
+padding: 30px;
+}
+ 
+.about p{
+font-weight: 100;
+font-size: larger;
+padding: 20px;
+margin: 10px;
+
+}
+.address-container  {
+display: grid;
+grid-template-columns: 1fr 2fr 1fr 1fr  ;
+
+
+
+}
+.address-container div span{
+
+color: azure;
+
+}
+.middle{
+text-align: center;
+padding: 20px;
+margin: 20px;
+}
+.middle h1{
+font-size: 50px;
+margin: 10px;
+padding: 20px;
+}
+.middle p{
+margin: 10px;
+padding: 10px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  
+  
+ 
+}
+.cards> div img {
+  height: 50px;
+  margin: 10px ;
+  padding: 5px;
+
+}
+  .cards> div{
+    margin: 30px;
+    /* border: 2px solid #00bfff; */
+    border-style:  inset;
+    padding: 10px;
+    transition: all 0.3 erase-in-out;
+  }
+  .cards> div h3{
+    margin:5px;
+    padding: 1%;
+    text-align: center;
+  }
+  .cards> div p{
+    text-align: center;
+  }
+  .cards> div:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    filter: blur(4px);
+  }
+
+  .cards:hover> div{
+    filter: blur(4px);
+  }
+  .cards .card-1:hover{
+    filter: blur(0);
+  }.cards .card-2:hover{
+    filter: blur(0);
+  }.cards .card-3:hover{
+    filter: blur(0);
+  }.cards .card-4:hover{
+    filter: blur(0);
+  }
